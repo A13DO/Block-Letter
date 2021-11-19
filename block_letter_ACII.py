@@ -1,4 +1,4 @@
-# block letter ACII
+#block_letter_ACII
 
 
 a = """  AAA      
@@ -137,12 +137,10 @@ ver_letters = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v,
 letter = str(input("Your letter: ")).strip()
 
 # A chr = 97
-
 letter_Num = ord(letter)
-ver_Number = 97 - letter_Num
+
+ver_Number = letter_Num - 97 # example b chr num = 98, 98 - 97 = 1
 print(ver_letters[ver_Number])
-
-
 
 
 
